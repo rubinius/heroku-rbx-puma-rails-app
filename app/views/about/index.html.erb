@@ -18,5 +18,7 @@
 
 <code><pre>
 &lt;%= Rubinius.version %&gt;
-<%# Rubinius.version %>
+<% if defined?(Rubinius) %>
+  <%= Rubinius.version %>
+<% end %>
 </pre></code>
