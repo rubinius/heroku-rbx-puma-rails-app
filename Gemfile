@@ -10,7 +10,12 @@ end
 
 
 # not a part of the heroku/rbx/puma demo
-# just here to shush asset pipeline noise
+# just here to quiet the other noise
+group :development do
+  # gem "sqlite3-ruby", :require => "sqlite3"
+  gem "sqlite3"
+end
+
 group :assets do
   gem "uglifier"
 end
