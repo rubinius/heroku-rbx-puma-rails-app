@@ -12,18 +12,18 @@
 
 3. Specify Rubinius as your ruby engine in your `Gemfile`
 
-    `ruby "1.9.3", :engine => "rbx", :engine_version => "2.0.0dev"`
+    `ruby "1.9.3", :engine => "rbx", :engine_version => "2.0.0.rc1"`
 
 
 ## Confirmation
 
 When you commit and push these changes to Heroku, if all goes well, you should see something this output:
 
-    -----> Using Ruby version: ruby-1.9.3-rbx-2.0.0dev
+    -----> Using Ruby version: ruby-1.9.3-rbx-2.0.0.rc1
     -----> Installing dependencies using Bundler version 1.3.0.pre.5
            Ruby version change detected. Clearing bundler cache.
            Old: ruby 1.9.2p290 (2011-07-09 revision 32553) [x86_64-linux]
-           New: rubinius 2.0.0dev (1.9.3 release yyyy-mm-dd JI) [x86_64-unknown-linux-gnu]
+           New: rubinius 2.0.0.rc1 (1.9.3 release yyyy-mm-dd JI) [x86_64-unknown-linux-gnu]
 
 To confirm that your app is really running on Rubinius 2.0, you can use the `console`.
 
@@ -41,8 +41,8 @@ Next, ask what version of Rubinius is running
 
     Rubinius.version
 
-It should be something that starts with `rubinius 2.0.0dev`
+It should be something that starts with `rubinius 2.0.0.rc1`
 
-    "rubinius 2.0.0dev (1.9.3 release yyyy-mm-dd JI) [x86_64-unknown-linux-gnu]"
+    "rubinius 2.0.0.rc1 (1.9.3 release yyyy-mm-dd JI) [x86_64-unknown-linux-gnu]"
 
 That's it! You're running Rubinius 2.0 on Heroku!
