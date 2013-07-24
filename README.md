@@ -4,7 +4,7 @@
 
 1. Install the Puma gem in your `Gemfile`
 
-    `gem "puma", "~> 2.0.0.b6"`
+    `gem "puma", "~> 2.2.2"`
 
 2. Tell Heroku to use Puma as your webserver in your `Procfile` (at the root of your app)
 
