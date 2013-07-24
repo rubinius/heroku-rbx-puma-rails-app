@@ -4,7 +4,7 @@ source "http://rubygems.org"
 ruby "1.9.3", :engine => "rbx", :engine_version => "2.0.0.rc1"
 
 # add the Puma gem
-gem "puma", "~> 2.0.0.b6"
+gem "puma", "~> 2.2.2"
 
 
 
